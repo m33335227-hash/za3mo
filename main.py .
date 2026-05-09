@@ -7,7 +7,7 @@ from aiogram.client.session.aiohttp import AiohttpSession
 
 TOKEN = "8736876315:AAEisG9jUwQu6AtTUq92wioUJwYRJz5_cQE"
 # Если работаешь БЕЗ VPN, оставь эту строку с прокси. Если С VPN — убери proxy=PROXY_URL
-bot= Bot(token="8736876315:AAEisG9jUwQu6AtTUq92wioUJwYRJz5_cQE")
+bot = Bot(token=TOKEN).
 session = AiohttpSession(proxy=PROXY_URL)
 bot = Bot(token=TOKEN, session=session)
 dp = Dispatcher()
