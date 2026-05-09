@@ -3,14 +3,17 @@ from aiogram import Bot, Dispatcher, types, F
 from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import StatesGroup, State
-from aiogram.client.session.aiohttp import AiohttpSession
 
-TOKEN = "8736876315:AAEisG9jUwQu6AtTUq92wioUJwYRJz5_cQE"
-# Если работаешь БЕЗ VPN, оставь эту строку с прокси. Если С VPN — убери proxy=PROXY_URL
-bot = Bot(token=TOKEN).
-session = AiohttpSession(proxy=PROXY_URL)
-bot = Bot(token=TOKEN, session=session)
+TOKEN = import asyncio
+from aiogram import Bot, Dispatcher, types, F
+from aiogram.filters import Command
+from aiogram.fsm.context import FSMContext
+from aiogram.fsm.state import StatesGroup, State
+
+TOKEN = "7836876315:AAE1SG9JUuQu6AtTuq92wioUiWYR3z5_cQE"
+bot = Bot(token=TOKEN)
 dp = Dispatcher()
+
 
 # --- СОСТОЯНИЯ ---
 class OrderState(StatesGroup):
